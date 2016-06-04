@@ -5,7 +5,7 @@ body {
 }
 
 .mainimage {
-    background: url("/assets/rings.jpg") center no-repeat;
+    background: url("/krominic/assets/rings.jpg") center no-repeat;
     width:100%;
     height:100vh;
     background-size:cover;
