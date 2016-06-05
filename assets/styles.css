@@ -74,6 +74,11 @@ footer {
     color: #999;
 }
 
+.narrow {
+    width: 75%;
+    margin: 0 auto;
+}
+
 @media screen and (max-width: 900px) {
     .venue {
         float: none;
