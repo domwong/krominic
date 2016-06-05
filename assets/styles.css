@@ -14,16 +14,59 @@ body {
 
 .maintitle {
     height:180px;
-    top:80%;
+    top:75%;
     position:absolute;
     width:100%;
-    color: #ccc;
+    color: #ddd;
     right: 1%;
+}
+
+.rvlogo {
+    font-family: "Times New Roman";
+    font-style: italic;
+    font-weight: normal;
+}
+
+.acelogo {
+    font-family: 'Arial Narrow', 'Arial';
+    font-style: normal;
+    font-weight: bold;
+}
+
+.andlogo {
+    font-family: 'Patua One';
+    font-style: normal;
+}
+
+.maintitledate {
+    font-family: 'Patua One', cursive;
 }
 
 .venue {
     float:left;
     width:50%;
+    display: inline-block;
+}
+
+.venuecollection {
+    display: block;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.accommodationcollection {
+    display: block;
+    width: 75%;
+    align-content: center;
+    margin: 0 auto;
+}
+
+h2 {
+    font-family: 'Patua One', cursive;
+}
+
+h3 {
+    font-family: 'Patua One', cursive;
 }
 
 footer {
@@ -37,7 +80,7 @@ footer {
         width:100%;
     }
     .maintitle {
-        top:70%;
+        top:65%;
     }
 
 }
