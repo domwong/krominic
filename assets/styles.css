@@ -46,12 +46,25 @@ body {
     float:left;
     width:50%;
     display: inline-block;
+    margin: auto;
+    /*hack*/
+    /*background-color: #fff;*/
 }
 
 .venuecollection {
     display: block;
     width: 75%;
     margin: 0 auto;
+    overflow: hidden;
+}
+
+.accommodation {
+    float:left;
+    width:100%;
+    display: inline-block;
+    margin: auto;
+    /*hack*/
+    background-color: #fff;
 }
 
 .accommodationcollection {
@@ -59,28 +72,73 @@ body {
     width: 75%;
     align-content: center;
     margin: 0 auto;
-}
-
-h2 {
-    font-family: 'Patua One', cursive;
+    overflow: hidden;
 }
 
 h3 {
     font-family: 'Patua One', cursive;
 }
 
+.rsvppanel {
+    background-color: #000d1a;
+    color: #aaa;
+}
+.rsvppanel h3 {
+    color: #ddd;
+}
+.rsvppanel h2 {
+    color: #ddd;
+}
+
+.venuepanel {
+    background-color: #000d1a;
+    color: #aaa;
+}
+.venuepanel h3 {
+    color: #ddd;
+}
+.venuepanel h2 {
+    color: #ddd;
+}
+
+.giftpanel {
+    background-color: #000d1a;
+    color: #aaa;
+}
+.giftpanel h3 {
+    color: #ddd;
+}
+.giftpanel h2 {
+    color: #ddd;
+}
+
+
+h2 {
+    font-family: 'Patua One', cursive;
+    padding-top: 15;
+    padding-bottom: 15;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
 footer {
     margin-top:100px;
     color: #999;
 }
 
-.narrow {
+p {
     width: 75%;
     margin: 0 auto;
+    padding: 25;
 }
 
 @media screen and (max-width: 900px) {
     .venue {
+        float: none;
+        width:100%;
+    }
+    .accommodation {
         float: none;
         width:100%;
     }
