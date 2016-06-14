@@ -173,6 +173,7 @@ p {
     }
     .maintitle {
         top:65%;
+        right:auto;
     }
 
 }
