@@ -4,6 +4,7 @@ body {
     text-align: center;
 }
 
+
 .mainimage {
     background: url("/krominic/assets/rings.jpg") center no-repeat;
     width:100%;
@@ -51,6 +52,19 @@ body {
     /*background-color: #fff;*/
 }
 
+.venue a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.venue a:hover, a:active {
+    background-color: red;
+}
+
 .venuecollection {
     display: block;
     width: 75%;
@@ -67,6 +81,20 @@ body {
     background-color: #fff;
 }
 
+.accommodation a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.accommodation a:hover, a:active {
+    background-color: red;
+}
+
+
 .accommodationcollection {
     display: block;
     width: 75%;
@@ -80,7 +108,7 @@ h3 {
 }
 
 .rsvppanel {
-    background-color: #000d1a;
+    background-color: #101d2a;
     color: #aaa;
 }
 .rsvppanel h3 {
@@ -91,7 +119,7 @@ h3 {
 }
 
 .venuepanel {
-    background-color: #000d1a;
+    background-color: #101d2a;
     color: #aaa;
 }
 .venuepanel h3 {
@@ -102,7 +130,7 @@ h3 {
 }
 
 .giftpanel {
-    background-color: #000d1a;
+    background-color: #101d2a;
     color: #aaa;
 }
 .giftpanel h3 {
@@ -123,8 +151,9 @@ h2 {
 
 
 footer {
-    margin-top:100px;
+    padding-top:50px;
     color: #999;
+    background-color: #888;
 }
 
 p {
