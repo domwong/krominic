@@ -6,7 +6,7 @@ body {
 
 
 .mainimage {
-    background: url("/krominic/assets/rings.jpg") center no-repeat;
+    background: url("/krominic/assets/colourful-cover.jpg") center no-repeat;
     width:100%;
     height:100vh;
     background-size:cover;
@@ -15,11 +15,10 @@ body {
 
 .maintitle {
     height:180px;
-    top:75%;
+    top:25%;
     position:absolute;
     width:100%;
-    color: #ddd;
-    right: 1%;
+    color: #222;
 }
 
 .rvlogo {
@@ -74,7 +73,7 @@ body {
 
 .accommodation {
     float:left;
-    width:100%;
+    width:50%;
     display: inline-block;
     margin: auto;
     /*hack*/
@@ -94,11 +93,13 @@ body {
     background-color: red;
 }
 
+.accommodation img {
+    width: 80%;
+}
 
 .accommodationcollection {
     display: block;
     width: 75%;
-    align-content: center;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -171,11 +172,6 @@ p {
         float: none;
         width:100%;
     }
-    .maintitle {
-        top:65%;
-        right:auto;
-    }
-
 }
 
 @@media screen and (max-width: 400px) {
