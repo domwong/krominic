@@ -57,10 +57,9 @@ html {
     float:left;
     width:50%;
     display: inline-block;
-    /*margin: auto;*/
+    margin: auto;
     /*hack*/
     /*background-color: #fff;*/
-    align-items: stretch;
 }
 
 .venue a:link, a:visited {
@@ -81,7 +80,6 @@ html {
     width: 75%;
     margin: 0 auto;
     overflow: hidden;
-    display: flex;
 }
 
 .accommodation {
