@@ -24,24 +24,31 @@ html {
     color: #222;
 }
 
+
 /* Navigation Menu - List items */
+
 .nav-item {
-  /* non-critical appearance styles */
-  width: 200px;
+    /* non-critical appearance styles */
+    width: 200px;
+    color: #222;
 }
 
-.nav-item a, a:link, a:visited, a:active {
-  /* non-critical appearance styles */
-  display: block;
-  padding: 1em;
-  color: #222;
-  font-size: 1.2em;
-  text-decoration: none;
-  transition: color 0.2s, background 0.5s;
+.nav-item a, a:link {
+    /* non-critical appearance styles */
+    display: block;
+    padding: 1em;
+    color: #222;
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: color 0.2s, background 0.5s;
+}
+
+.nav-item a:visited {
+    color: #222;
 }
 
 .nav-item a:hover {
-  color: #c74438;
+    color: #c74438;
 }
 
 .site-wrap {
@@ -53,10 +60,7 @@ html {
     bottom: 100%;
     left: 0;
     z-index: 1;
-    background-image: linear-gradient(135deg,
-                      rgb(254,255,255) 0%,
-                      rgb(221,241,249) 35%,
-                      rgb(160,216,239) 100%);
+    background-image: linear-gradient(135deg, rgb(254, 255, 255) 0%, rgb(221, 241, 249) 35%, rgb(160, 216, 239) 100%);
     background-size: 200%;
 }
 
@@ -64,7 +68,6 @@ html {
     position: absolute;
     clip: rect(0, 0, 0, 0);
 }
-
 
 label[for="nav-trigger"] {
     position: fixed;
@@ -78,25 +81,23 @@ label[for="nav-trigger"] {
     background-size: contain;
 }
 
-.nav-trigger:checked + label {
+.nav-trigger:checked+label {
     left: 215px;
 }
 
-.nav-trigger:checked ~ .site-wrap {
+.nav-trigger:checked~.site-wrap {
     left: 200px;
 }
 
-.nav-trigger + label, .site-wrap {
+.nav-trigger+label, .site-wrap {
     transition: left 0.2s;
 }
 
 .parallax {
     /* The image used */
     background-image: url("/assets/colourful-cover.jpg");
-
     /* Full height */
     height: 100%;
-
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
@@ -105,12 +106,12 @@ label[for="nav-trigger"] {
 }
 
 .maintitle {
-    width:100%;
+    width: 100%;
     color: #222;
-    height:100vh;
-    background-size:cover;
-    position:relative;
-    top:25vh;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+    top: 25vh;
 }
 
 .rvlogo {
@@ -135,8 +136,8 @@ label[for="nav-trigger"] {
 }
 
 .venue {
-    float:left;
-    width:50%;
+    float: left;
+    width: 50%;
     display: inline-block;
     margin: auto;
     /*hack*/
@@ -172,8 +173,8 @@ label[for="nav-trigger"] {
 }
 
 .accommodation {
-    float:left;
-    width:50%;
+    float: left;
+    width: 50%;
     display: inline-block;
     margin: auto;
     /*hack*/
@@ -212,9 +213,11 @@ h3 {
     background-color: #101d2a;
     color: #aaa;
 }
+
 .rsvppanel h3 {
     color: #ddd;
 }
+
 .rsvppanel h2 {
     color: #ddd;
 }
@@ -223,9 +226,11 @@ h3 {
     background-color: #101d2a;
     color: #aaa;
 }
+
 .venuepanel h3 {
     color: #ddd;
 }
+
 .venuepanel h2 {
     color: #ddd;
 }
@@ -234,13 +239,14 @@ h3 {
     background-color: #101d2a;
     color: #aaa;
 }
+
 .giftpanel h3 {
     color: #ddd;
 }
+
 .giftpanel h2 {
     color: #ddd;
 }
-
 
 h2 {
     font-family: 'Patua One', cursive;
@@ -250,9 +256,8 @@ h2 {
     margin: 0 auto;
 }
 
-
 footer {
-    padding-top:50px;
+    padding-top: 50px;
     color: #888;
     background-color: #999;
 }
@@ -266,11 +271,11 @@ p {
 @media screen and (max-width: 900px) {
     .venue {
         float: none;
-        width:100%;
+        width: 100%;
     }
     .accommodation {
         float: none;
-        width:100%;
+        width: 100%;
     }
 }
 
