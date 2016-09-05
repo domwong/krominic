@@ -9,6 +9,87 @@ html {
     height: 100%;
 }
 
+.navigation {
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    font-family: 'Patua One';
+    font-style: normal;
+    color: #222;
+}
+
+/* Navigation Menu - List items */
+.nav-item {
+  /* non-critical appearance styles */
+  width: 200px;
+}
+
+.nav-item a, a:link, a:visited, a:active {
+  /* non-critical appearance styles */
+  display: block;
+  padding: 1em;
+  color: #222;
+  font-size: 1.2em;
+  text-decoration: none;
+  transition: color 0.2s, background 0.5s;
+}
+
+.nav-item a:hover {
+  color: #c74438;
+}
+
+.site-wrap {
+    min-width: 100%;
+    min-height: 100%;
+    background-color: #fff;
+    position: relative;
+    top: 0;
+    bottom: 100%;
+    left: 0;
+    z-index: 1;
+    background-image: linear-gradient(135deg,
+                      rgb(254,255,255) 0%,
+                      rgb(221,241,249) 35%,
+                      rgb(160,216,239) 100%);
+    background-size: 200%;
+}
+
+.nav-trigger {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+
+
+label[for="nav-trigger"] {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 2;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6'/><rect y='24' width='30' height='6'/><rect y='12' width='30' height='6'/></svg>");
+    background-size: contain;
+}
+
+.nav-trigger:checked + label {
+    left: 215px;
+}
+
+.nav-trigger:checked ~ .site-wrap {
+    left: 200px;
+}
+
+.nav-trigger + label, .site-wrap {
+    transition: left 0.2s;
+}
+
 .parallax {
     /* The image used */
     background-image: url("/assets/colourful-cover.jpg");
@@ -80,6 +161,14 @@ html {
     width: 75%;
     margin: 0 auto;
     overflow: hidden;
+}
+
+.schedulepanel {
+    background-color: white;
+}
+
+.accommodationpanel {
+    background-color: white;
 }
 
 .accommodation {
@@ -164,8 +253,8 @@ h2 {
 
 footer {
     padding-top:50px;
-    color: #999;
-    background-color: #888;
+    color: #888;
+    background-color: #999;
 }
 
 p {
