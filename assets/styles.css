@@ -355,6 +355,10 @@ p {
     margin: auto;
 }
 
+.auend img {
+    width: 50%;
+}
+
 .aulovehate {
     display: block;
     width: 75%;
@@ -371,6 +375,9 @@ p {
     /*background-color: #fff;*/
 }
 
+.auprofile img {
+    width: 80%;
+}
 
 @media screen and (max-width: 900px) {
     .venue {
