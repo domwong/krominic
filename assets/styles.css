@@ -1,12 +1,18 @@
 body {
     margin: 0;
-    font-family: 'Arial', 'Helvetica';
+    font-family: 'Poiret One', cursive;
     text-align: center;
     height: 100%;
+    font-size: 1.3em;
 }
 
 html {
     height: 100%;
+}
+
+@font-face {
+    font-family: "Sign-Painter";
+    src: url('/assets/fonts/SignPainter.otf');
 }
 
 .navigation {
@@ -19,7 +25,7 @@ html {
     bottom: 0;
     left: 0;
     z-index: 0;
-    font-family: 'Patua One';
+    font-family: 'Sign-Painter';
     font-style: normal;
     color: #222;
 }
@@ -33,12 +39,12 @@ html {
     color: #222;
 }
 
-.nav-item a, a:link {
+.nav-item a, .nav-item a:link {
     /* non-critical appearance styles */
     display: block;
     padding: 1em;
     color: #222;
-    font-size: 1.2em;
+    font-size: 2em;
     text-decoration: none;
     transition: color 0.2s, background 0.5s;
 }
@@ -84,16 +90,16 @@ label[for="nav-trigger"] {
     width: 30px;
     height: 30px;
     cursor: pointer;
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6' stroke='white'/><rect y='24' width='30' height='6' stroke='white'/><rect y='12' width='30' height='6' stroke='white'/></svg>");
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6' stroke='rgb(252,81,65)' fill='rgb(252,81,65)'/><rect y='24' width='30' height='6' stroke='rgb(252,81,65)' fill='rgb(252,81,65)'/><rect y='12' width='30' height='6' stroke='rgb(252,81,65)' fill='rgb(252,81,65)'/></svg>");
     background-size: contain;
 }
 
 .nav-trigger:checked+label {
-    left: 215px;
+    left: 230px;
 }
 
 .nav-trigger:checked~.site-wrap {
-    left: 200px;
+    left: 215px;
 }
 
 .nav-trigger+label, .site-wrap {
@@ -123,24 +129,25 @@ label[for="nav-trigger"] {
 }
 
 .rvlogo {
-    font-family: "Times New Roman";
-    font-style: italic;
+    font-family: "Poiret One", cursive;
+    font-style: normal;
     font-weight: normal;
 }
 
 .acelogo {
-    font-family: 'Arial Narrow', 'Arial';
+    font-family: "Poiret One", cursive;
     font-style: normal;
     font-weight: bold;
 }
 
 .andlogo {
-    font-family: 'Patua One';
+    font-family: "Poiret One", cursive;
     font-style: normal;
 }
 
 .maintitledate {
-    font-family: 'Patua One', cursive;
+    font-family: 'Sign-Painter';
+    font-size: 2.5em;
 }
 
 .venue {
@@ -152,7 +159,7 @@ label[for="nav-trigger"] {
     /*background-color: #fff;*/
 }
 
-.venue a:link, a:visited {
+.venue a:link, .venue a:visited {
     background-color: #f44336;
     color: white;
     padding: 14px 25px;
@@ -161,7 +168,7 @@ label[for="nav-trigger"] {
     display: inline-block;
 }
 
-.venue a:hover, a:active {
+.venue a:hover, .venue a:active {
     background-color: red;
 }
 
@@ -189,7 +196,7 @@ label[for="nav-trigger"] {
     background-color: #fff;
 }
 
-.accommodation a:link, a:visited {
+.accommodation a:link, .accommodation a:visited {
     background-color: #f44336;
     color: white;
     padding: 14px 25px;
@@ -198,7 +205,7 @@ label[for="nav-trigger"] {
     display: inline-block;
 }
 
-.accommodation a:hover, a:active {
+.accommodation a:hover, .accommodation a:active {
     background-color: red;
 }
 
@@ -214,12 +221,27 @@ label[for="nav-trigger"] {
 }
 
 h3 {
-    font-family: 'Patua One', cursive;
+    font-family: 'Sign-Painter';
+    font-size: 2em;
+}
+
+h1 {
+    font-size: 1.7em;
+}
+
+h4 {
+    font-family: 'Sign-Painter';
+    font-size: 2em;
 }
 
 .rsvppanel {
     background-color: #101d2a;
     color: #aaa;
+    text-transform: uppercase;
+}
+
+.rsvppanel p {
+    font-size: 0.8em;
 }
 
 .rsvppanel h3 {
@@ -230,7 +252,7 @@ h3 {
     color: #ddd;
 }
 
-.rsvppanel a:link, a:visited {
+.rsvppanel a:link, .rsvppanel a:visited {
     background-color: #f44336;
     color: white;
     padding: 14px 25px;
@@ -239,7 +261,7 @@ h3 {
     display: inline-block;
 }
 
-.rsvppanel a:hover, a:active {
+.rsvppanel a:hover, .rsvppanel a:active {
     background-color: red;
 }
 
@@ -270,17 +292,22 @@ h3 {
 }
 
 h2 {
-    font-family: 'Patua One', cursive;
+    font-family: 'Sign-Painter';
     padding-top: 15;
     padding-bottom: 15;
     width: 100%;
     margin: 0 auto;
+    font-size: 2em;
 }
 
 footer {
     padding-top: 50px;
-    color: #888;
-    background-color: #999;
+    color: #ccc;
+    /*background-color: #369CFF;*/
+    /*background-color: #00bfff;*/
+    background-color: #10AAE6;
+    font-family: "Sign-Painter";
+    font-size: 1.2em;
 }
 
 p {
@@ -288,6 +315,62 @@ p {
     margin: 0 auto;
     padding: 25;
 }
+
+.austory {
+    width: 75%;
+    margin: auto;
+}
+
+.audom {
+    width: 60%;
+    text-align: left;
+    float: left;
+    padding:1em;
+}
+
+.aukrish {
+    width: 60%;
+    text-align: right;
+    float: right;
+    padding:1em;
+}
+
+.austory {
+    background-color: #101d2a;
+    color: #aaa;
+    width: 100%;
+    display: inline-block;
+}
+
+.austorypanel {
+    width: 75%;
+    margin: auto;
+}
+
+.auend {
+    width: 75%;
+    text-align: center;
+    align-content: center;
+    padding:1em;
+    margin: auto;
+}
+
+.aulovehate {
+    display: block;
+    width: 75%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.auprofile {
+    float: left;
+    width: 50%;
+    display: inline-block;
+    margin: auto;
+    /*hack*/
+    /*background-color: #fff;*/
+}
+
 
 @media screen and (max-width: 900px) {
     .venue {
@@ -298,9 +381,13 @@ p {
         float: none;
         width: 100%;
     }
+    .auprofile {
+        float: none;
+        width: 100%;
+    }
 }
 
-@@media screen and (max-width: 400px) {
+@media screen and (max-width: 400px) {
     iframe {
         width: 100%;
     }
