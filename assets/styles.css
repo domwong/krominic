@@ -118,7 +118,8 @@ label[for="nav-trigger"] {
     height: 100vh;
     background-size: cover;
     position: relative;
-    top: 25vh;
+    padding-top: 25vh;
+    bottom: 0;
 }
 
 .rvlogo {
@@ -227,6 +228,19 @@ h3 {
 
 .rsvppanel h2 {
     color: #ddd;
+}
+
+.rsvppanel a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.rsvppanel a:hover, a:active {
+    background-color: red;
 }
 
 .venuepanel {
