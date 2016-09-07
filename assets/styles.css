@@ -348,22 +348,33 @@ p {
 }
 
 .auend {
-    width: 75%;
+    width: 100%;
     text-align: center;
     align-content: center;
     padding: 1em;
+    background-color: white;
+}
+
+.auendpanel {
+    width: 75%;
     margin: auto;
 }
 
 .auend img {
     width: 50%;
+    padding: 1em;
 }
 
 .aulovehate {
     display: block;
-    width: 75%;
-    margin: 0 auto;
+    width: 100%;
     overflow: hidden;
+    background-color: white;
+}
+
+.aulovehatepanel {
+    width: 75%;
+    margin: auto;
 }
 
 .auprofile {
