@@ -1,0 +1,17 @@
+---
+layout: base
+---
+<div class="site-wrap">
+    <div class="gallerypanel">
+        <header>
+            <h1>Gallery</h1>
+        </header>
+        {% for image in site.static_files %}
+            {% if image.path contains 'assets/gallery' %}
+                <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+            {% endif %}
+        {% endfor %}
+        {% include footer.html %}
+    </div>
+
+</div>
