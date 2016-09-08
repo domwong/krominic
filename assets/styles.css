@@ -279,16 +279,7 @@ h4 {
 }
 
 .giftpanel {
-    background-color: #101d2a;
-    color: #aaa;
-}
-
-.giftpanel h3 {
-    color: #ddd;
-}
-
-.giftpanel h2 {
-    color: #ddd;
+    background-color: white;
 }
 
 h2 {
@@ -391,7 +382,18 @@ p {
 }
 
 .dresscodepanel {
-    background-color: white;
+    background-color: #101d2a;
+    color: #aaa;
+}
+
+.dresscodepanel h2 {
+    color: ddd;
+}
+
+.gallerypanel img {
+    padding: 1em;
+    width: 30%;
+    margin: auto;
 }
 
 @media screen and (max-width: 900px) {
