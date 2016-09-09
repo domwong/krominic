@@ -4,7 +4,7 @@ layout: base
 <div class="site-wrap">
     <div class="gallerypanel">
         <header>
-            <h1>Gallery</h1>
+            <h1>Photos</h1>
         </header>
         {% for image in site.static_files %} {% if image.path contains 'assets/gallery' %}
         <img id="myImg{{image.path}}" src="/assets/default.gif" class="lazy" data-src="{{ site.baseurl }}{{ image.path }}" alt="" />
