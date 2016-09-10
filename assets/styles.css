@@ -187,6 +187,10 @@ label[for="nav-trigger"] {
     background-color: white;
 }
 
+.accommodationpanel p {
+    width: 75%;
+}
+
 .accommodation {
     float: left;
     width: 50%;
