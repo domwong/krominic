@@ -282,6 +282,13 @@ h4 {
     background-color: white;
 }
 
+.giftcontent {
+    width: 75%;
+    overflow: hidden;
+    margin: auto;
+    text-align: justify;
+}
+
 h2 {
     font-family: 'Sign-Painter';
     padding-top: 15;
@@ -302,7 +309,6 @@ footer {
 }
 
 p {
-    width: 75%;
     margin: 0 auto;
     padding: 25;
 }
@@ -386,9 +392,29 @@ p {
     color: #aaa;
 }
 
+.dresscodecontent {
+    overflow: hidden;
+    margin: auto;
+    width: 75%;
+    text-align: justify;
+}
+
 .dresscodepanel h2 {
     color: ddd;
 }
+
+.dresscodepanel img {
+    float: left;
+    height: 25%;
+    padding: 1em;
+}
+
+.giftpanel img {
+    float: right;
+    height: 25%;
+    padding: 1em;
+}
+
 
 .gallerypanel img {
     padding: 1em;
