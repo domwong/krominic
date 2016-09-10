@@ -213,7 +213,7 @@ label[for="nav-trigger"] {
     background-color: red;
 }
 
-.accommodation img {
+.accommodation img, .venue img {
     width: 80%;
 }
 
@@ -272,6 +272,7 @@ h4 {
 .venuepanel {
     background-color: #101d2a;
     color: #aaa;
+    padding-bottom: 1em;
 }
 
 .venuepanel h3 {
@@ -419,7 +420,6 @@ p {
     padding: 1em;
 }
 
-
 .gallerypanel img {
     padding: 1em;
     width: 30%;
@@ -562,4 +562,22 @@ p {
 
 .gallerypanel {
     background-color: white;
+}
+
+.overlay {
+    background: transparent;
+    position: absolute;;
+    width: 100%;
+    min-height: 550px;
+    top: 0;
+    margin-top: -550px;
+    margin: auto;
+}
+
+.map-wrap {
+    position: relative;
+}
+
+iframe {
+    border: 0 none;
 }
