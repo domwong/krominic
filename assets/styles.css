@@ -227,6 +227,10 @@ label[for="nav-trigger"] {
 h3 {
     font-family: 'Sign-Painter';
     font-size: 2em;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    -webkit-margin-before:0.25em;
+    -webkit-margin-after:0.25em;
 }
 
 h1 {
@@ -236,6 +240,8 @@ h1 {
 h4 {
     font-family: 'Sign-Painter';
     font-size: 2em;
+    margin-bottom: 0.25em;
+    margin-top: 0.25em;
 }
 
 .rsvppanel {
@@ -248,7 +254,7 @@ h4 {
     font-size: 0.8em;
 }
 
-.rsvppanel h3 {
+.rsvppanel h3, .venuepanel h3{
     color: #ddd;
 }
 
@@ -275,10 +281,6 @@ h4 {
     padding-bottom: 1em;
 }
 
-.venuepanel h3 {
-    color: #ddd;
-}
-
 .venuepanel h2 {
     color: #ddd;
 }
@@ -296,8 +298,8 @@ h4 {
 
 h2 {
     font-family: 'Sign-Painter';
-    padding-top: 15;
-    padding-bottom: 15;
+    padding-top: 0.5em;
+    padding-bottom: 0.25em;
     width: 100%;
     margin: 0 auto;
     font-size: 2em;
@@ -580,4 +582,9 @@ p {
 
 iframe {
     border: 0 none;
+}
+
+.bottom {
+    padding:1em;
+    bottom: 10;
 }
