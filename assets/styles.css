@@ -153,10 +153,25 @@ label[for="nav-trigger"] {
 .venue {
     float: left;
     width: 50%;
-    display: inline-block;
     margin: auto;
-    /*hack*/
-    /*background-color: #fff;*/
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+.venueaddr {
+    display: table;
+    height: 150px;
+    margin: auto;
+    text-align: center;
+    position: relative;
+}
+
+.venuetrans {
+    display: table;
+    height: 300px;
+    margin: auto;
+    text-align: center;
+    position: relative;
 }
 
 .venue a:link, .venue a:visited {
@@ -165,7 +180,6 @@ label[for="nav-trigger"] {
     padding: 14px 25px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
 }
 
 .venue a:hover, .venue a:active {
@@ -194,7 +208,7 @@ label[for="nav-trigger"] {
 .accommodation {
     float: left;
     width: 50%;
-    display: inline-block;
+    display: table;
     margin: auto;
     /*hack*/
     background-color: #fff;
@@ -202,7 +216,7 @@ label[for="nav-trigger"] {
 }
 
 .longaccom {
-    height: 725px;
+    height: 750px;
 }
 
 .shortaccom {
@@ -216,7 +230,12 @@ label[for="nav-trigger"] {
     padding: 14px 25px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+}
+
+.buttonwrap {
+    display: table-row;;
+    height: 50px;
+    vertical-align: bottom;
 }
 
 .accommodation a:hover, .accommodation a:active {
@@ -467,6 +486,12 @@ p {
         float: none;
         width: 100%;
     }
+    .venueaddr {
+        height: auto;
+    }
+    .venuetrans {
+        height: auto;
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -479,7 +504,12 @@ p {
     .shortaccom {
         height: auto;
     }
-
+    .venueaddr {
+        height: auto;
+    }
+    .venuetrans {
+        height: auto;
+    }
 }
 
 
