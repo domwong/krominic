@@ -198,7 +198,17 @@ label[for="nav-trigger"] {
     margin: auto;
     /*hack*/
     background-color: #fff;
+    position: relative;
 }
+
+.longaccom {
+    height: 700px;
+}
+
+.shortaccom {
+    height: 550px;
+}
+
 
 .accommodation a:link, .accommodation a:visited {
     background-color: #f44336;
@@ -214,7 +224,10 @@ label[for="nav-trigger"] {
 }
 
 .accommodation img, .venue img {
-    width: 80%;
+    /*width: 80%;*/
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
 }
 
 .accommodationcollection {
@@ -435,7 +448,7 @@ p {
     opacity: 0.7;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
     .venue {
         float: none;
         width: 100%;
@@ -443,6 +456,12 @@ p {
     .accommodation {
         float: none;
         width: 100%;
+    }
+    .longaccom {
+        height: auto;
+    }
+    .shortaccom {
+        height: auto;
     }
     .auprofile {
         float: none;
@@ -454,6 +473,13 @@ p {
     iframe {
         width: 100%;
     }
+    .longaccom {
+        height: auto;
+    }
+    .shortaccom {
+        height: auto;
+    }
+    
 }
 
 
