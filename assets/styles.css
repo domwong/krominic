@@ -10,6 +10,13 @@ html {
     height: 100%;
 }
 
+iframe {
+    border: 0 none;
+    width: 75%;
+    height: 600;
+}
+
+
 @font-face {
     font-family: "Sign-Painter";
     src: url('/assets/fonts/SignPainter.otf');
@@ -201,26 +208,36 @@ label[for="nav-trigger"] {
     background-color: white;
 }
 
-.accommodationpanel p {
-    width: 75%;
-}
 
 .accommodation {
-    float: left;
-    width: 50%;
     display: table;
-    margin: auto;
+    width: 100%;
+    height: inherit;
     /*hack*/
     background-color: #fff;
     position: relative;
 }
 
 .longaccom {
+    width: 50%;
+    margin: auto;
+    float: left;
     height: 750px;
+    display: block;
+    position: relative;
+    /*hack*/
+    background-color: #fff;
 }
 
 .shortaccom {
+    margin: auto;
+    width: 50%;
+    float: left;
     height: 550px;
+    display: block;
+    position: relative;
+    /*hack*/
+    background-color: #fff;
 }
 
 
@@ -475,12 +492,15 @@ p {
     .accommodation {
         float: none;
         width: 100%;
+        display: inline;
     }
     .longaccom {
         height: auto;
+        width: 100%;
     }
     .shortaccom {
         height: auto;
+        width: 100%;
     }
     .auprofile {
         float: none;
@@ -488,15 +508,23 @@ p {
     }
     .venueaddr {
         height: auto;
+        width: 100%;
     }
     .venuetrans {
         height: auto;
+        width: 100%;
     }
+    iframe {
+        width: 100%;
+        height: 350px;
+    }
+
 }
 
 @media screen and (max-width: 400px) {
     iframe {
         width: 100%;
+        height: 350px;
     }
     .longaccom {
         height: auto;
@@ -636,9 +664,6 @@ p {
     position: relative;
 }
 
-iframe {
-    border: 0 none;
-}
 
 .bottom {
     padding:1em;
