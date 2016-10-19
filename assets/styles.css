@@ -351,6 +351,19 @@ h4 {
     padding: 1em;
 }
 
+.giftcontent a:link, .giftcontent a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.giftcontent a:hover, .giftcontent a:active {
+    background-color: red;
+}
+
+
 h2 {
     font-family: 'Sign-Painter';
     padding-top: 0.5em;
