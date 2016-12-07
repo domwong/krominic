@@ -6,6 +6,7 @@ layout: base
         <header>
             <h1>Photos</h1>
         </header>
+        <p><a href="https://www.instagram.com/explore/tags/krominic/">We'll be #krominic all day</a></p>
         {% for image in site.static_files %} {% if image.path contains 'assets/gallery' %}
         <img id="myImg{{image.path}}" src="/assets/default.gif" class="lazy" data-src="{{ site.baseurl }}{{ image.path }}" alt="" />
 
